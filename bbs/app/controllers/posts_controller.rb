@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.order("created_at desc")
+    @posts = Post.order("created_at desc").page params[:page]
     @postslast = @posts.last(10)
 
   end
