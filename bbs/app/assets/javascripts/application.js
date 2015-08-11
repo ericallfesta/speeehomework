@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+    $('#item').css({
+    'background-color' : '#ddd',
+    'font-weight' : '',
+    'color' : 'rgb(0,40,244)'
+  });
+
